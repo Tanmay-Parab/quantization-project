@@ -1,0 +1,7 @@
+{
+  "best_validation_top1_pct": 94.34,
+  "best_epoch": 9,
+  "training_seconds": 727.6164629000705,
+  "state_dict_bytes": 9178763,
+  "test_set_used": false
+}

@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "observer_count": 71,
+  "inactive_residual_observers": [
+    "features.1.skip_add.activation_post_process",
+    "features.2.skip_add.activation_post_process",
+    "features.4.skip_add.activation_post_process",
+    "features.7.skip_add.activation_post_process",
+    "features.11.skip_add.activation_post_process",
+    "features.14.skip_add.activation_post_process",
+    "features.17.skip_add.activation_post_process"
+  ],
+  "unexpected_observers": [],
+  "test_set_used": false
+}

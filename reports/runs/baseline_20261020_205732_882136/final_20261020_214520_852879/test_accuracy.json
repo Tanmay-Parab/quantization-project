@@ -1,0 +1,23 @@
+{
+  "FP32": {
+    "test_top1_pct": 93.97,
+    "test_top5_pct": 99.91,
+    "correct_top1": 9397,
+    "test_images": 10000,
+    "torchscript_bytes": 9309232
+  },
+  "PTQ": {
+    "test_top1_pct": 86.97,
+    "test_top5_pct": 99.61,
+    "correct_top1": 8697,
+    "test_images": 10000,
+    "torchscript_bytes": 2637118
+  },
+  "QAT": {
+    "test_top1_pct": 93.86,
+    "test_top5_pct": 99.89,
+    "correct_top1": 9386,
+    "test_images": 10000,
+    "torchscript_bytes": 2635564
+  }
+}

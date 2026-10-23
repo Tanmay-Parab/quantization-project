@@ -1,0 +1,75 @@
+{
+  "models": {
+    "FP32": {
+      "test_top1_pct": 93.97,
+      "test_top5_pct": 99.91,
+      "correct_top1": 9397,
+      "test_images": 10000,
+      "torchscript_bytes": 9309232,
+      "latency_p50_ms": 6.741350000000001,
+      "latency_p95_ms": 8.059159999999999,
+      "latency_mean_ms": 6.885613166666666,
+      "block_medians_ms": [
+        6.406750000000001,
+        6.656750000000001,
+        6.6738,
+        6.88,
+        6.7621,
+        7.174799999999999
+      ],
+      "timed_calls": 600,
+      "size_reduction_vs_fp32": 1.0,
+      "p50_speedup_vs_fp32": 1.0
+    },
+    "PTQ": {
+      "test_top1_pct": 86.97,
+      "test_top5_pct": 99.61,
+      "correct_top1": 8697,
+      "test_images": 10000,
+      "torchscript_bytes": 2637118,
+      "latency_p50_ms": 1.7437,
+      "latency_p95_ms": 2.380515,
+      "latency_mean_ms": 1.8268560000000003,
+      "block_medians_ms": [
+        1.7005,
+        1.8,
+        1.8009,
+        1.7183000000000002,
+        1.6724,
+        2.0204
+      ],
+      "timed_calls": 600,
+      "size_reduction_vs_fp32": 3.5300779108102103,
+      "p50_speedup_vs_fp32": 3.866118024889603
+    },
+    "QAT": {
+      "test_top1_pct": 93.86,
+      "test_top5_pct": 99.89,
+      "correct_top1": 9386,
+      "test_images": 10000,
+      "torchscript_bytes": 2635564,
+      "latency_p50_ms": 1.75585,
+      "latency_p95_ms": 3.049925,
+      "latency_mean_ms": 1.9974641666666666,
+      "block_medians_ms": [
+        1.7165499999999998,
+        1.6393,
+        1.7113,
+        1.6425,
+        2.2427,
+        2.7278000000000002
+      ],
+      "timed_calls": 600,
+      "size_reduction_vs_fp32": 3.532159340467543,
+      "p50_speedup_vs_fp32": 3.8393655494489853
+    }
+  },
+  "ptq_test_drop_percentage_points": 7.0,
+  "qat_test_recovery_percentage_points": 6.890000000000001,
+  "qat_test_gap_to_fp32_percentage_points": 0.10999999999999943,
+  "cpu": "AMD Ryzen 9 5900HS with Radeon Graphics",
+  "cpu_threads": 4,
+  "latency_batch_size": 1,
+  "latency_scope": "CPU TorchScript forward call only; excludes preprocessing/loading/transfers.",
+  "phone_benchmark": false
+}

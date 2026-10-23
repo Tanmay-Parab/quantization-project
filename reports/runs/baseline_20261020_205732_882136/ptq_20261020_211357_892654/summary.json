@@ -1,0 +1,22 @@
+{
+  "fp32_validation_top1_pct": 94.34,
+  "ptq_validation_top1_pct": 86.82,
+  "accuracy_drop_percentage_points": 7.52000000000001,
+  "fp32_torchscript_bytes": 9309232,
+  "ptq_torchscript_bytes": 2637118,
+  "torchscript_size_reduction_factor": 3.5300779108102103,
+  "quantized_conv_linear_count": 53,
+  "calibration_images": 1000,
+  "validation_images": 5000,
+  "test_set_used": false,
+  "backend": "x86",
+  "cpu_threads": 4,
+  "batch_size": 32,
+  "seed": 42,
+  "torch": "2.7.1+cu126",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "baseline_checkpoint_sha256": "3a724e930cddf2367adf4a1b7dcd4c7453ab4cf07df268c6ca33946e425abdea",
+  "splits_sha256": "13ab37a142e4a14f975add8adeb57828c04a11db9bfb7c5138a58bf1a94c2b62",
+  "qconfig": "QConfig(activation=functools.partial(<class 'torch.ao.quantization.observer.HistogramObserver'>, reduce_range=True){}, weight=functools.partial(<class 'torch.ao.quantization.observer.PerChannelMinMaxObserver'>, dtype=torch.qint8, qscheme=torch.per_channel_symmetric){})",
+  "note": "INT8 weight/activation CPU PTQ. No phone latency or test accuracy measured."
+}

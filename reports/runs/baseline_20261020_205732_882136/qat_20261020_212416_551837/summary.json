@@ -1,0 +1,12 @@
+{
+  "fp32_validation_top1_pct": 94.34,
+  "ptq_validation_top1_pct": 86.82,
+  "qat_validation_top1_pct": 94.22,
+  "best_epoch": 4,
+  "recovered_vs_ptq_percentage_points": 7.400000000000006,
+  "remaining_gap_to_fp32_percentage_points": 0.12000000000000455,
+  "qat_torchscript_bytes": 2635564,
+  "torchscript_size_reduction_factor": 3.532159340467543,
+  "experiment_seconds_including_validation": 653.396211000043,
+  "test_set_used": false
+}
